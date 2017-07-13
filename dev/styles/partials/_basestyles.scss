@@ -1,0 +1,12 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: $primaryFont, $secondaryFont;
+}
+
+.globalWrapper{
+	max-width: 1600px;
+	width: 1600px;
+	border: 1px solid red;
+}
