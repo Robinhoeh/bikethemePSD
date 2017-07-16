@@ -1,6 +1,6 @@
 section.mainHeading{
 	height: 496px;
-	background: #f7f7f7;
+	background: $background;
 	display: flex;
 	align-items: center;
 	.headingBox{
@@ -16,4 +16,7 @@ section.mainHeading{
 			margin-bottom: 34px;
 		}
 	}
+}
+.headingBox p{
+	font-size: 18px;
 }
