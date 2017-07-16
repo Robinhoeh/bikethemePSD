@@ -295,7 +295,7 @@ section.gallery2 {
   display: flex; }
 
 .boxThree {
-  width: 533px; }
+  width: 50%; }
   .boxThree .textBox {
     height: 399px;
     display: -webkit-box;
@@ -319,3 +319,66 @@ section.gallery2 {
       width: 32px;
       height: 32px;
       margin-bottom: 31px; }
+
+.blackSeat {
+  background: url("/public/assets/rsz_over-head-seat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px; }
+
+.bikeWater {
+  background: url("/public/assets/rsz_green-bike-water.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%; }
+
+section.gallery3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.boxFour {
+  width: 33.33%; }
+  .boxFour .textBox {
+    height: 399px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #848789; }
+    .boxFour .textBox .bikeFork {
+      width: 32px;
+      height: 41px;
+      margin-bottom: 31px; }
+
+.redBikeShaft {
+  background: url("/public/assets/rsz_red-shaft.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%; }
+
+.insideWheel {
+  background: url("/public/assets/rsz_red-inside-wheel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px; }
+
+.bikeWall {
+  background: url("/public/assets/rsz_red-wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%; }

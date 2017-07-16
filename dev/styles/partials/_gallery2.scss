@@ -2,7 +2,7 @@ section.gallery2{
 	display: flex;
 }
 .boxThree{
-	width: 533px;
+	width: 50%;
 	.textBox{
 		height: 399px;
 		display: flex;
@@ -20,4 +20,18 @@ section.gallery2{
 		}
 	}
 }
+.blackSeat{
+	background: url("/public/assets/rsz_over-head-seat.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+}
+.bikeWater{
+	background: url("/public/assets/rsz_green-bike-water.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%
+}
+
 
