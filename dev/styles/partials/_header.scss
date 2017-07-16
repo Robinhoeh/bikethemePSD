@@ -17,18 +17,18 @@ section.menu .hamburger{
 	font-size: 13px;
 	text-transform: uppercase;
 	padding-top: 1%;
-}
-.menu li a{
-	padding: 20px 0;
-}
-.menu li{
-	padding: 0 20px;
-}
-.navLinks li img{
-	width: 94px;
-	height: 85px;
+	li{
+		padding: 0 20px;
+		a{
+			padding: 20px 0;
+		}
+	}
 }
 .navLinks{
 	display: flex;
 	align-items: center;
+	li img{
+		width: 94px;
+		height: 85px;
+	}
 }

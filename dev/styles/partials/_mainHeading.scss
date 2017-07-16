@@ -1,0 +1,19 @@
+section.mainHeading{
+	height: 496px;
+	background: #f7f7f7;
+	display: flex;
+	align-items: center;
+	.headingBox{
+		margin: 0 auto;
+		width: 70%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.gearIcon{
+			width: 52px;
+			height: 43px;
+			margin-bottom: 34px;
+		}
+	}
+}
