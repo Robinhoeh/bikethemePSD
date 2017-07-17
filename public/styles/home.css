@@ -382,3 +382,83 @@ section.gallery3 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 33.33%; }
+
+section.lastGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.boxFive {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .boxFive .behind-black-seat {
+    background: url("/public/assets/rsz_behind-black-seat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 267px; }
+
+.seatsWall {
+  background: url("/public/assets/rsz_seats-wall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 267px;
+  height: 267px; }
+
+.boxSix {
+  width: 100%; }
+  .boxSix .closeUpBlackSeat {
+    background: url("/public/assets/rsz_closeup_black_seat_behind.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 267px; }
+
+.bagOnBike {
+  background: url("/public/assets/rsz_bag-on-bike_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.backHalfBike {
+  background: url("/public/assets/rsz_back-half.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33.33%;
+  height: 534px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.boxSeven {
+  width: 100%; }
+  .boxSeven .bikeStore {
+    background: url("/public/assets/rsz_store.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 533px;
+    height: 267px; }
+
+.boxEight {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .boxEight .overheadBrown {
+    background: url("/public/assets/rsz_overhead-brown-seat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 267px; }
+
+.blackBag {
+  background: url("/public/assets/rsz_black-bag.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 267px;
+  height: 267px; }
