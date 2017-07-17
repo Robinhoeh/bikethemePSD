@@ -1,0 +1,42 @@
+section.contact{
+	display: flex;
+	height: 469px;
+	justify-content: center;
+	align-items: center;
+	.bottomLogo{
+		width: 94px;
+		height: 85px;
+		margin-bottom: 46px;
+	}
+}
+.contactBox{
+	// margin-top: 109px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	h2{
+		color: #848789;
+		font-style: italic;
+		padding-bottom: 35px;
+	}
+}
+.emailForm{
+	display: flex;
+	.email input{
+		width: 400px;
+		height: 69px;
+		font-size: 20px;
+		font-style: italic;
+		margin-right: 4px;
+	}
+}
+.goButton button{
+	background: $image-filter;
+	width: 126px;
+	height: 69px;
+	font-size: 24px;
+	font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 4px;
+}
