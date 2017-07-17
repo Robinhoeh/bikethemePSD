@@ -1,10 +1,11 @@
 section.gallery1{
 	display: flex;
+	position: relative;
 	.imageOne{
 	background: url("/public/assets/rsz_big-handle-bars.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%
+	width: 100%;
 	}
 }
 .boxTwo{
@@ -25,6 +26,13 @@ section.gallery1{
 			margin-bottom: 31px;
 		}
 	}
+}
+.whiteBikeOverlay{
+	position: absolute;
+	width: 113px;
+	height: 118px;
+	left: 31%;
+	top: 39%;
 }
 span.miniLine{
 	width: 50px;

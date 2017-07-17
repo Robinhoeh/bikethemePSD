@@ -1,4 +1,4 @@
-section.mainHeading{
+section.secondHeading{
 	height: 496px;
 	background: $background;
 	display: flex;
@@ -10,15 +10,22 @@ section.mainHeading{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.gearIcon{
-			width: 52px;
-			height: 43px;
+		.twitterIcon i{
+			color: #1dcaff;
+			font-size: 35px;
 		}
 	}
 }
-.mainHeading h2{
-	padding: 35px 0;
+.secondHeading p {
+	padding: 10px 0;
 }
-.headingBox p{
-	font-size: 18px;
+.headingBox .aod{
+	color: #353638;
+	font-weight: 700;
 }
+.headingBox p.twitterText{
+	font-style: italic;
+}
+
+
+

@@ -233,8 +233,10 @@ section.mainHeading {
             align-items: center; }
     section.mainHeading .headingBox .gearIcon {
       width: 52px;
-      height: 43px;
-      margin-bottom: 34px; }
+      height: 43px; }
+
+.mainHeading h2 {
+  padding: 35px 0; }
 
 .headingBox p {
   font-size: 18px; }
@@ -242,7 +244,8 @@ section.mainHeading {
 section.gallery1 {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
   section.gallery1 .imageOne {
     background: url("/public/assets/rsz_big-handle-bars.jpg");
     background-size: cover;
@@ -274,6 +277,13 @@ section.gallery1 {
       width: 41px;
       height: 30px;
       margin-bottom: 31px; }
+
+.whiteBikeOverlay {
+  position: absolute;
+  width: 113px;
+  height: 118px;
+  left: 31%;
+  top: 39%; }
 
 span.miniLine {
   width: 50px;
@@ -440,7 +450,7 @@ section.lastGallery {
     background: url("/public/assets/rsz_store.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 533px;
+    width: 100%;
     height: 267px; }
 
 .boxEight {
@@ -461,6 +471,12 @@ section.lastGallery {
   background-repeat: no-repeat;
   width: 267px;
   height: 267px; }
+
+.stackOne {
+  width: 36.33%; }
+
+.stackTwo {
+  width: 34.33%; }
 
 section.contact {
   display: -webkit-box;
@@ -513,7 +529,8 @@ section.contact {
   font-weight: 300;
   color: white;
   text-transform: uppercase;
-  margin-left: 4px; }
+  margin-left: 4px;
+  border: none; }
 
 section.discoverShop {
   display: -webkit-box;
@@ -548,3 +565,128 @@ section.discoverShop {
     text-transform: uppercase;
     color: white;
     font-weight: 700; }
+
+section.socialContacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f7f7f7;
+  height: 250px; }
+
+.socialBoxOne, .socialBoxTwo, .socialBoxThree {
+  width: 33.33%; }
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+.socialBoxOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 18%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .socialBoxOne p:nth-child(1) {
+    font-weight: 700; }
+
+.socialBoxOne p.addressFont {
+  font-style: italic; }
+
+.socialBoxTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .socialBoxTwo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.socialBoxThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.socialBoxTwo li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+  .socialBoxTwo li a {
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .socialBoxTwo li a i {
+      font-size: 20px;
+      color: white; }
+
+.socialBoxTwo li:nth-child(1) {
+  background: #1dcaff; }
+
+.socialBoxTwo li:nth-child(2) {
+  margin: 0 15px;
+  background: #3b5998; }
+
+.socialBoxTwo li:nth-child(3) {
+  background: #bd081c; }
+
+section.secondHeading {
+  height: 496px;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.secondHeading .headingBox {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.secondHeading .headingBox .twitterIcon i {
+      color: #1dcaff;
+      font-size: 35px; }
+
+.secondHeading p {
+  padding: 10px 0; }
+
+.headingBox .aod {
+  color: #353638;
+  font-weight: 700; }
+
+.headingBox p.twitterText {
+  font-style: italic; }

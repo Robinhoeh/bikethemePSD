@@ -50,7 +50,7 @@ section.lastGallery{
 		background: url("/public/assets/rsz_store.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		width: 533px;
+		width: 100%;
 		height: 267px;
 	}
 }
@@ -71,4 +71,10 @@ section.lastGallery{
 	background-repeat: no-repeat;
 	width: 267px;
 	height: 267px;
+}
+.stackOne{
+	width: 36.33%;
+}
+.stackTwo{
+	width: 34.33%;
 }
