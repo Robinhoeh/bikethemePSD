@@ -6,9 +6,13 @@ header{
 	padding-top: 1%;
 	background-size: cover;
 	background-position: center center;
+	transition: .3s ease-in-out;
 }
 
 section.menu .hamburger{
+	display: none;
+}
+.menu .mobileLogo{
 	display: none;
 }
 .menu{
@@ -40,3 +44,49 @@ section.menu .hamburger{
 		height: 85px;
 	}
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	header{
+		height: 500px;
+		transition: .3s ease-in-out;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 700px) {
+	header{
+		height: 300px;
+		transition: .3s ease-in-out;
+		.menu .hamburger{
+			display: block;
+			font-size: 30px;
+			cursor: pointer;
+			transition: 0.3s ease-in-out;
+			top: 15px;
+			right: 15px;
+			z-index: 9999;
+			position: fixed;
+			color: #a05460;
+		}
+	}
+	ul.navLinks{
+		display: none;
+	}
+	.menu{
+	justify-content: flex-start;
+    padding: 20px;
+	.mobileLogo{
+		display: block;
+		width: 65px;
+	} 
+}
+
+}//MQ 700 close
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+
