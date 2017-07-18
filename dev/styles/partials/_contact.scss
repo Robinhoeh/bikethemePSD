@@ -18,6 +18,8 @@ section.contact{
 		color: #848789;
 		font-style: italic;
 		padding-bottom: 35px;
+		text-transform: capitalize;
+		font-weight: 300;
 	}
 }
 .emailForm{
@@ -29,6 +31,9 @@ section.contact{
 		font-style: italic;
 		margin-right: 4px;
 		padding-left: 20px;
+		font-weight: 300;
+		color: #929292;
+		letter-spacing: 0.5px;
 	}
 }
 .goButton button{
@@ -41,4 +46,5 @@ section.contact{
     text-transform: uppercase;
     margin-left: 4px;
     border: none;
+    font-weight: 300;
 }

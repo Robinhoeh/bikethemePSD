@@ -1,5 +1,6 @@
 section.gallery3{ 
 	display: flex;
+	position: relative;
 }
 .boxFour{
 	width: 33.33%;
@@ -29,6 +30,13 @@ section.gallery3{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 33.33%;
+}
+.bicyclesOverlay{
+	position: absolute;
+	width: 208px;
+	height: 67px;
+	left: 12.5%;
+	top: 44%;
 }
 .insideWheel{
 	background: url("/public/assets/rsz_red-inside-wheel.jpg");

@@ -370,7 +370,8 @@ section.gallery2 {
 section.gallery3 {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 .boxFour {
   width: 33.33%; }
@@ -407,6 +408,13 @@ section.gallery3 {
   background-size: cover;
   background-repeat: no-repeat;
   width: 33.33%; }
+
+.bicyclesOverlay {
+  position: absolute;
+  width: 208px;
+  height: 67px;
+  left: 12.5%;
+  top: 44%; }
 
 .insideWheel {
   background: url("/public/assets/rsz_red-inside-wheel.jpg");
@@ -497,7 +505,9 @@ section.lastGallery {
   color: white;
   position: relative;
   right: 12px;
-  width: 90px; }
+  width: 90px;
+  letter-spacing: 1px;
+  font-weight: 400; }
 
 .boxEight {
   width: 100%;
@@ -554,7 +564,9 @@ section.contact {
   .contactBox h2 {
     color: #848789;
     font-style: italic;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    text-transform: capitalize;
+    font-weight: 300; }
 
 .emailForm {
   display: -webkit-box;
@@ -566,7 +578,10 @@ section.contact {
     font-size: 20px;
     font-style: italic;
     margin-right: 4px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    font-weight: 300;
+    color: #929292;
+    letter-spacing: 0.5px; }
 
 .goButton button {
   background: #64c29e;
@@ -577,7 +592,8 @@ section.contact {
   color: white;
   text-transform: uppercase;
   margin-left: 4px;
-  border: none; }
+  border: none;
+  font-weight: 300; }
 
 section.discoverShop {
   display: -webkit-box;
