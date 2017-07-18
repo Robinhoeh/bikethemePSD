@@ -21,8 +21,16 @@ section.menu .hamburger{
 		padding: 0 20px;
 		a{
 			padding: 20px 0;
+			transition: .3s;
 		}
 	}
+}
+.menu li a:hover{
+	background: lightgrey;
+	transition: ease-in-out .3s ;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 0;
 }
 .navLinks{
 	display: flex;

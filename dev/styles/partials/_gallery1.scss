@@ -23,9 +23,12 @@ section.gallery1{
 		.bikeFrameIcon{
 			width: 41px;
 			height: 30px;
-			margin-bottom: 31px;
+			margin: 31px 0;
 		}
 	}
+}
+.boxTwo h2{
+	padding-bottom: 19px;
 }
 .whiteBikeOverlay{
 	position: absolute;
@@ -38,7 +41,7 @@ span.miniLine{
 	width: 50px;
 	height: 1px;
 	background: #353738;
-	margin: 50px 0 64px 0;
+	margin: 33px 0 26px 0;
 }
 .sideBikeSeat{
 	background: url("/public/assets/rsz_img_02.jpg");
