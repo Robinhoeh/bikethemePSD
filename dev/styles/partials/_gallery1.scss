@@ -5,6 +5,7 @@ section.gallery1{
 	background: url("/public/assets/rsz_big-handle-bars.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	width: 100%;
 	}
 }
@@ -49,4 +50,47 @@ span.miniLine{
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 200px;
+	background-position: center center;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.gallery1 .imageOne{
+		width: 50%;
+	}
+	.whiteBikeOverlay{
+		left: 18%;
+		top: 37%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	section.gallery1 {
+		flex-direction: column;
+		.boxTwo{
+			width: 100%;
+		}
+	}
+	section.gallery1 .imageOne{
+		height: 406px;
+		width: 100%;
+	}
+	.sideBikeSeat{
+		display: none;
+	}
+	.whiteBikeOverlay{
+		left: 43%;
+		top: 14%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.whiteBikeOverlay{
+		top: 16%;
+		img{
+			width: 78%;
+		}
+	}
 }

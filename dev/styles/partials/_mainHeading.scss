@@ -22,3 +22,21 @@ section.mainHeading{
 .headingBox p{
 	font-size: 18px;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	section.mainHeading{
+		height: 566px;
+		p{
+			text-align: left;
+		}
+	}
+}
