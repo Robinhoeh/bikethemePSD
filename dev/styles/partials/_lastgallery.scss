@@ -33,7 +33,7 @@ section.lastGallery{
 	background: url("/public/assets/rsz_bag-on-bike_1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 33.33%;
+	width: 50%;
 	height: 534px;
 	display: flex;
 }
@@ -41,7 +41,7 @@ section.lastGallery{
 	background: url("/public/assets/rsz_back-half.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 33.33%;
+	width: 50%;
 	height: 534px;
 	display: flex;
 }
@@ -93,6 +93,109 @@ section.lastGallery{
 .stackOne{
 	width: 36.33%;
 }
+.bikeBagStack{
+	display: flex;
+	width: 100%;
+}
 .stackTwo{
 	width: 34.33%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	section.lastGallery{
+		flex-wrap: wrap;
+		.stackOne {
+			width: 100%;
+			display: flex;
+		}
+	}
+	.boxFive .behind-black-seat, .seatsWall{
+		width: 50%;
+	}
+	.boxSix{
+		width: 50%;
+		.closeUpBlackSeat{
+			width: 100%;
+		}
+	}
+	.bikeBagStack{
+		display: none;
+	}
+	.stackTwo{
+		width: 100%;
+		display: flex;
+		.boxSeven{
+			width: 72%;
+			.littleWhiteBikeOverlay{
+				top: 69%;
+				right: 77%;
+			}
+		}
+	}
+	.boxEight .overheadBrown, .blackBag{
+		width: 50%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	section.lastGallery .stackOne{
+		width: 100%;
+		.boxFive{
+			width: 100%;
+			.behind-black-seat{
+				background-position-y: center;
+				width: 50%;
+			}
+		}
+	}
+	.boxFive .seatsWall{
+		width: 50%;
+	}
+	.boxSix{
+		display: none;
+	}
+	.stackTwo{
+		width: 100%;
+		.boxSeven{
+			width: 121%;
+			.littleWhiteBikeOverlay{
+				top: 69%;
+				right: 60%;
+			}
+		}
+	}
+	.boxEight{
+		width: 50%;
+		.overheadBrown{
+			background-position-x: center;
+			width: 100%;
+		}
+	}
+	.boxEight .blackBag{
+		display: none;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.boxFive{
+		display: none;
+	}
+	.stackTwo{
+		flex-direction: column-reverse;
+		.boxEight{
+			width: 100%;
+			justify-content: center;
+			padding: 20px 0;
+			.overheadBrown{
+				width: 50%;
+			}
+		}
+	}
+	.stackTwo .boxSeven .littleWhiteBikeOverlay{
+		top: 72%;
+		right: 44%;
+	}
 }

@@ -167,7 +167,8 @@ ul {
 img {
   width: 100%;
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  background-position: bottom center; }
 
 a {
   text-decoration: none; }
@@ -618,7 +619,7 @@ section.lastGallery {
   background: url("/public/assets/rsz_bag-on-bike_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 33.33%;
+  width: 50%;
   height: 534px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,7 +629,7 @@ section.lastGallery {
   background: url("/public/assets/rsz_back-half.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 33.33%;
+  width: 50%;
   height: 534px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,8 +684,94 @@ section.lastGallery {
 .stackOne {
   width: 36.33%; }
 
+.bikeBagStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
 .stackTwo {
   width: 34.33%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.lastGallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    section.lastGallery .stackOne {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .boxFive .behind-black-seat, .seatsWall {
+    width: 50%; }
+  .boxSix {
+    width: 50%; }
+    .boxSix .closeUpBlackSeat {
+      width: 100%; }
+  .bikeBagStack {
+    display: none; }
+  .stackTwo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .stackTwo .boxSeven {
+      width: 72%; }
+      .stackTwo .boxSeven .littleWhiteBikeOverlay {
+        top: 69%;
+        right: 77%; }
+  .boxEight .overheadBrown, .blackBag {
+    width: 50%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.lastGallery .stackOne {
+    width: 100%; }
+    section.lastGallery .stackOne .boxFive {
+      width: 100%; }
+      section.lastGallery .stackOne .boxFive .behind-black-seat {
+        background-position-y: center;
+        width: 50%; }
+  .boxFive .seatsWall {
+    width: 50%; }
+  .boxSix {
+    display: none; }
+  .stackTwo {
+    width: 100%; }
+    .stackTwo .boxSeven {
+      width: 121%; }
+      .stackTwo .boxSeven .littleWhiteBikeOverlay {
+        top: 69%;
+        right: 60%; }
+  .boxEight {
+    width: 50%; }
+    .boxEight .overheadBrown {
+      background-position-x: center;
+      width: 100%; }
+  .boxEight .blackBag {
+    display: none; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .boxFive {
+    display: none; }
+  .stackTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .stackTwo .boxEight {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 0; }
+      .stackTwo .boxEight .overheadBrown {
+        width: 50%; }
+  .stackTwo .boxSeven .littleWhiteBikeOverlay {
+    top: 72%;
+    right: 44%; } }
 
 section.contact {
   display: -webkit-box;
