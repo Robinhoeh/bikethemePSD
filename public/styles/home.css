@@ -173,10 +173,6 @@ img {
 a {
   text-decoration: none; }
 
-button {
-  padding: 0;
-  margin: 0; }
-
 header {
   background-image: url("/public/assets/rsz_hero-image.jpg");
   width: 100%;
@@ -209,7 +205,8 @@ section.menu .hamburger {
     .menu li a {
       padding: 20px 0;
       -webkit-transition: .3s;
-      transition: .3s; }
+      transition: .3s;
+      color: #282f35; }
 
 .menu li a:hover {
   background: lightgrey;
@@ -855,7 +852,9 @@ section.contact {
   section.contact .emailForm {
     width: 320px; }
     section.contact .emailForm .email input {
-      width: 320px; } }
+      width: 320px; }
+    section.contact .emailForm button {
+      border-radius: 5px; } }
 
 section.discoverShop {
   display: -webkit-box;

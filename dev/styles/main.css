@@ -211,7 +211,8 @@ section.menu .hamburger {
       padding: 20px 0;
       -webkit-transition: .3s;
       -o-transition: .3s;
-      transition: .3s; }
+      transition: .3s;
+      color: #282f35; }
 
 .menu li a:hover {
   background: lightgrey;
