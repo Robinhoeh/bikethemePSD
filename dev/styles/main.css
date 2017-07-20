@@ -93,11 +93,12 @@ button[disabled], input[disabled] {
 
 input[type=checkbox], input[type=radio] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
 input[type=search] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
@@ -128,6 +129,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0; }
 
 * {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -173,10 +175,6 @@ img {
 a {
   text-decoration: none; }
 
-button {
-  padding: 0;
-  margin: 0; }
-
 header {
   background-image: url("/public/assets/rsz_hero-image.jpg");
   width: 100%;
@@ -186,6 +184,7 @@ header {
   background-size: cover;
   background-position: center center;
   -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
 section.menu .hamburger {
@@ -196,11 +195,13 @@ section.menu .hamburger {
 
 .menu {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 13px;
   text-transform: uppercase;
   padding-top: 1%; }
@@ -209,11 +210,13 @@ section.menu .hamburger {
     .menu li a {
       padding: 20px 0;
       -webkit-transition: .3s;
+      -o-transition: .3s;
       transition: .3s; }
 
 .menu li a:hover {
   background: lightgrey;
   -webkit-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
   color: white;
   border-radius: 5px;
@@ -221,11 +224,13 @@ section.menu .hamburger {
 
 .navLinks {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .navLinks li img {
     width: 94px;
     height: 85px; }
@@ -235,6 +240,7 @@ section.menu .hamburger {
   header {
     height: 500px;
     -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out; } }
 
 /* Landscape phone to portrait tablet */
@@ -242,12 +248,14 @@ section.menu .hamburger {
   header {
     height: 300px;
     -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
     header .menu .hamburger {
       display: block;
       font-size: 30px;
       cursor: pointer;
       -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
       top: 15px;
       right: 15px;
@@ -258,8 +266,9 @@ section.menu .hamburger {
     display: none; }
   .menu {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     padding: 20px; }
     .menu .mobileLogo {
       display: block;
@@ -270,25 +279,30 @@ section.mainHeading {
   height: 496px;
   background: #f7f7f7;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   section.mainHeading .headingBox {
     margin: 0 auto;
     width: 70%;
     text-align: center;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
     section.mainHeading .headingBox .gearIcon {
       width: 52px;
       height: 43px; }
@@ -310,6 +324,7 @@ section.mainHeading {
 
 section.gallery1 {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -325,18 +340,22 @@ section.gallery1 {
   .boxTwo .textBox {
     height: 399px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
     font-size: 16px;
@@ -383,8 +402,9 @@ span.miniLine {
   section.gallery1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     section.gallery1 .boxTwo {
       width: 100%; }
   section.gallery1 .imageOne {
@@ -405,6 +425,7 @@ span.miniLine {
 
 section.gallery2 {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -414,18 +435,22 @@ section.gallery2 {
   .boxThree .textBox {
     height: 399px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
     font-size: 16px;
@@ -472,8 +497,9 @@ section.gallery2 {
   section.gallery2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
     section.gallery2 .blackSeat {
       display: none; }
   section.gallery2 .bikeWater {
@@ -493,6 +519,7 @@ section.gallery2 {
 
 section.gallery3 {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -502,18 +529,22 @@ section.gallery3 {
   .boxFour .textBox {
     height: 399px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
     font-size: 16px;
@@ -561,14 +592,17 @@ section.gallery3 {
   section.gallery3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     section.gallery3 .insideWheel {
       display: none; }
   .boxFour {
     width: 100%; }
   .boxFour .textBox {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("/public/assets/rsz_red-wall.jpg");
+    background: -webkit-linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_red-wall.jpg");
+    background: -o-linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_red-wall.jpg");
     background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_red-wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -588,6 +622,7 @@ section.gallery3 {
 /* Landscape phones and down */
 section.lastGallery {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
@@ -595,6 +630,7 @@ section.lastGallery {
 .boxFive {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .boxFive .behind-black-seat {
@@ -626,6 +662,7 @@ section.lastGallery {
   width: 50%;
   height: 534px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -636,6 +673,7 @@ section.lastGallery {
   width: 50%;
   height: 534px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -643,6 +681,8 @@ section.lastGallery {
   width: 100%; }
   .boxSeven .bikeStore {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("/public/assets/rsz_store.jpg");
+    background: -webkit-linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_store.jpg");
+    background: -o-linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_store.jpg");
     background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_store.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -669,6 +709,7 @@ section.lastGallery {
 .boxEight {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .boxEight .overheadBrown {
@@ -690,6 +731,7 @@ section.lastGallery {
 
 .bikeBagStack {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
@@ -700,11 +742,13 @@ section.lastGallery {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   section.lastGallery {
+    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    flex-wrap: wrap; }
     section.lastGallery .stackOne {
       width: 100%;
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
   .boxFive .behind-black-seat, .seatsWall {
@@ -718,6 +762,7 @@ section.lastGallery {
   .stackTwo {
     width: 100%;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .stackTwo .boxSeven {
@@ -763,13 +808,15 @@ section.lastGallery {
   .stackTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse; }
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
     .stackTwo .boxEight {
       width: 100%;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       padding: 20px 0; }
       .stackTwo .boxEight .overheadBrown {
         width: 50%; }
@@ -779,15 +826,18 @@ section.lastGallery {
 
 section.contact {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 469px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   section.contact .bottomLogo {
     width: 94px;
     height: 85px;
@@ -795,15 +845,18 @@ section.contact {
 
 .contactBox {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .contactBox h2 {
     color: #848789;
     font-style: italic;
@@ -813,6 +866,7 @@ section.contact {
 
 .emailForm {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .emailForm .email input {
@@ -843,8 +897,9 @@ section.contact {
   section.contact .emailForm {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     section.contact .emailForm button {
       margin: 0;
       width: 99%;
@@ -859,16 +914,19 @@ section.contact {
 
 section.discoverShop {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #282f35;
   height: 200px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   section.discoverShop .discoverButton button {
     width: 300px;
     height: 50px;
@@ -877,15 +935,18 @@ section.discoverShop {
     border: none;
     border: 1px solid white;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: white;
@@ -893,6 +954,7 @@ section.discoverShop {
 
 section.socialContacts {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background: #f7f7f7;
@@ -909,19 +971,23 @@ section.socialContacts {
 
 .socialBoxOne {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
   padding-left: 3%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .socialBoxOne p:nth-child(1) {
     font-weight: 700; }
 
@@ -930,29 +996,36 @@ section.socialContacts {
 
 .socialBoxTwo {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .socialBoxTwo ul {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
 
 .socialBoxThree {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   padding-right: 3%; }
 
@@ -967,7 +1040,8 @@ section.socialContacts {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
     .socialBoxTwo li a i {
       font-size: 20px;
       color: white; }
@@ -987,20 +1061,24 @@ section.socialContacts {
   section.socialContacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center; }
     section.socialContacts .socialBoxOne {
       padding-left: 0;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
   .socialBoxThree {
     padding-right: 0;
     width: 200px; }
@@ -1017,25 +1095,30 @@ section.secondHeading {
   height: 496px;
   background: #f7f7f7;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   section.secondHeading .headingBox {
     margin: 0 auto;
     width: 70%;
     text-align: center;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
     section.secondHeading .headingBox .twitterIcon i {
       color: #1dcaff;
       font-size: 35px; }
