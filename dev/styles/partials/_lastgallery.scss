@@ -6,7 +6,7 @@ section.lastGallery{
 	width: 100%;
 	display: flex;
 	.behind-black-seat{
-		background: url("/public/assets/rsz_behind-black-seat.jpg");
+		background: url("../assets/rsz_behind-black-seat.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 267px;
@@ -14,7 +14,7 @@ section.lastGallery{
 	}
 }
 .seatsWall{
-	background: url("/public/assets/rsz_seats-wall.jpg");
+	background: url("../assets/rsz_seats-wall.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 267px;
@@ -23,14 +23,14 @@ section.lastGallery{
 .boxSix{
 	width: 100%;
 	.closeUpBlackSeat{
-		background: url("/public/assets/rsz_closeup_black_seat_behind.jpg");
+		background: url("../assets/rsz_closeup_black_seat_behind.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 267px;
 	}
 }
 .bagOnBike{
-	background: url("/public/assets/rsz_bag-on-bike_1.jpg");
+	background: url("../assets/rsz_bag-on-bike_1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
@@ -38,7 +38,7 @@ section.lastGallery{
 	display: flex;
 }
 .backHalfBike{
-	background: url("/public/assets/rsz_back-half.jpg");
+	background: url("../assets/rsz_back-half.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
@@ -48,7 +48,7 @@ section.lastGallery{
 .boxSeven{
 	width: 100%;
 	.bikeStore{
-		background: linear-gradient(rgba(100, 194, 158, 0.80), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_store.jpg");
+		background: linear-gradient(rgba(100, 194, 158, 0.80), rgba(100, 194, 158, 0.8)), url("../assets/rsz_store.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 100%;
@@ -76,7 +76,7 @@ section.lastGallery{
 	width: 100%;
 	display: flex;
 		.overheadBrown{
-		background: url("/public/assets/rsz_overhead-brown-seat.jpg");
+		background: url("../assets/rsz_overhead-brown-seat.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 267px;
@@ -84,7 +84,7 @@ section.lastGallery{
 	}
 }
 .blackBag{
-	background: url("/public/assets/rsz_black-bag.jpg");
+	background: url("../assets/rsz_black-bag.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 267px;

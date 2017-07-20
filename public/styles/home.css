@@ -174,7 +174,7 @@ a {
   text-decoration: none; }
 
 header {
-  background-image: url("/public/assets/rsz_hero-image.jpg");
+  background-image: url("../assets/rsz_hero-image.jpg");
   width: 100%;
   height: 800px;
   background-repeat: no-repeat;
@@ -260,7 +260,8 @@ section.menu .hamburger {
     padding: 20px; }
     .menu .mobileLogo {
       display: block;
-      width: 65px; } }
+      width: 65px;
+      margin-top: 12px; } }
 
 /* Landscape phones and down */
 section.mainHeading {
@@ -311,7 +312,7 @@ section.gallery1 {
   display: flex;
   position: relative; }
   section.gallery1 .imageOne {
-    background: url("/public/assets/rsz_big-handle-bars.jpg");
+    background: url("../assets/rsz_big-handle-bars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -360,7 +361,7 @@ span.miniLine {
   margin: 33px 0 26px 0; }
 
 .sideBikeSeat {
-  background: url("/public/assets/rsz_img_02.jpg");
+  background: url("../assets/rsz_img_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -396,7 +397,8 @@ span.miniLine {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .whiteBikeOverlay {
-    top: 16%; }
+    top: 16%;
+    left: 38%; }
     .whiteBikeOverlay img {
       width: 78%; } }
 
@@ -436,7 +438,7 @@ section.gallery2 {
   padding-bottom: 19px; }
 
 .blackSeat {
-  background: url("/public/assets/rsz_over-head-seat.jpg");
+  background: url("../assets/rsz_over-head-seat.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -444,7 +446,7 @@ section.gallery2 {
   background-position: center; }
 
 .bikeWater {
-  background: url("/public/assets/rsz_green-bike-water.jpg");
+  background: url("../assets/rsz_green-bike-water.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -525,7 +527,7 @@ section.gallery3 {
   padding-bottom: 19px; }
 
 .redBikeShaft {
-  background: url("/public/assets/rsz_red-shaft.jpg");
+  background: url("../assets/rsz_red-shaft.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 33.33%;
@@ -539,7 +541,7 @@ section.gallery3 {
   top: 44%; }
 
 .insideWheel {
-  background: url("/public/assets/rsz_red-inside-wheel.jpg");
+  background: url("../assets/rsz_red-inside-wheel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -547,7 +549,7 @@ section.gallery3 {
   background-position: bottom center; }
 
 .bikeWall {
-  background: url("/public/assets/rsz_red-wall.jpg");
+  background: url("../assets/rsz_red-wall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 33.33%;
@@ -565,8 +567,8 @@ section.gallery3 {
   .boxFour {
     width: 100%; }
   .boxFour .textBox {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("/public/assets/rsz_red-wall.jpg");
-    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_red-wall.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("../assets/rsz_red-wall.jpg");
+    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("../assets/rsz_red-wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -595,14 +597,14 @@ section.lastGallery {
   display: -ms-flexbox;
   display: flex; }
   .boxFive .behind-black-seat {
-    background: url("/public/assets/rsz_behind-black-seat.jpg");
+    background: url("../assets/rsz_behind-black-seat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 267px;
     height: 267px; }
 
 .seatsWall {
-  background: url("/public/assets/rsz_seats-wall.jpg");
+  background: url("../assets/rsz_seats-wall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 267px;
@@ -611,13 +613,13 @@ section.lastGallery {
 .boxSix {
   width: 100%; }
   .boxSix .closeUpBlackSeat {
-    background: url("/public/assets/rsz_closeup_black_seat_behind.jpg");
+    background: url("../assets/rsz_closeup_black_seat_behind.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 267px; }
 
 .bagOnBike {
-  background: url("/public/assets/rsz_bag-on-bike_1.jpg");
+  background: url("../assets/rsz_bag-on-bike_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
@@ -627,7 +629,7 @@ section.lastGallery {
   display: flex; }
 
 .backHalfBike {
-  background: url("/public/assets/rsz_back-half.jpg");
+  background: url("../assets/rsz_back-half.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
@@ -639,8 +641,8 @@ section.lastGallery {
 .boxSeven {
   width: 100%; }
   .boxSeven .bikeStore {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("/public/assets/rsz_store.jpg");
-    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("/public/assets/rsz_store.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 194, 158, 0.8)), to(rgba(100, 194, 158, 0.8))), url("../assets/rsz_store.jpg");
+    background: linear-gradient(rgba(100, 194, 158, 0.8), rgba(100, 194, 158, 0.8)), url("../assets/rsz_store.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -669,14 +671,14 @@ section.lastGallery {
   display: -ms-flexbox;
   display: flex; }
   .boxEight .overheadBrown {
-    background: url("/public/assets/rsz_overhead-brown-seat.jpg");
+    background: url("../assets/rsz_overhead-brown-seat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 267px;
     height: 267px; }
 
 .blackBag {
-  background: url("/public/assets/rsz_black-bag.jpg");
+  background: url("../assets/rsz_black-bag.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 267px;
@@ -878,9 +880,6 @@ section.discoverShop {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 0 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -888,7 +887,8 @@ section.discoverShop {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: white;
-    font-weight: 700; }
+    font-weight: 700;
+    display: inline; }
 
 section.socialContacts {
   display: -webkit-box;

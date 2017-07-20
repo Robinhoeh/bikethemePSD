@@ -1,5 +1,5 @@
 header{
-	background-image: url("/public/assets/rsz_hero-image.jpg");
+	background-image: url("../assets/rsz_hero-image.jpg");
 	width: 100%; 
 	height: 800px;
 	background-repeat: no-repeat;
@@ -80,6 +80,7 @@ section.menu .hamburger{
 	.mobileLogo{
 		display: block;
 		width: 65px;
+		margin-top: 12px;
 	} 
 }
 
