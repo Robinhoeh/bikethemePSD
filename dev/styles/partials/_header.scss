@@ -45,6 +45,35 @@ section.menu .hamburger{
 		height: 85px;
 	}
 }
+.overlay.menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.88);
+	z-index: 9999;
+	color: white;
+}
+.overlay ul {
+	flex-direction: column;
+}
+.overlay ul a {
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
+.overlay .hamburger {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+}
+ul.mobileMenu{
+	display: none;
+}
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
@@ -71,6 +100,17 @@ section.menu .hamburger{
 			color: #a05460;
 		}
 	}
+	ul.mobileMenu.small li{
+		padding: 15px 0;
+		position: block;
+		a{
+			color: $image-filter;
+		}
+	}
+	ul.mobileMenu{
+		display: flex;
+		align-items: center;
+	}
 	ul.navLinks{
 		display: none;
 	}
@@ -86,9 +126,5 @@ section.menu .hamburger{
 
 }//MQ 700 close
 
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
 
 
