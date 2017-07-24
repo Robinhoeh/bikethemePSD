@@ -1,5 +1,9 @@
-"use strict";
+'use strict';
 
-var ohHey = "Hello World";
-
-console.log(ohHey);
+$(function () {
+	$('a').smoothScroll({
+		offset: 0,
+		speed: 1000,
+		easing: 'swing'
+	});
+});
