@@ -100,16 +100,20 @@ ul.mobileMenu{
 			color: #a05460;
 		}
 	}
+	ul.mobileMenu{
+		display: none;
+	}
+	ul.mobileMenu.small{
+		display: flex;
+		align-items: center;
+		margin-top: 48px;
+	}
 	ul.mobileMenu.small li{
 		padding: 15px 0;
 		position: block;
 		a{
 			color: $image-filter;
 		}
-	}
-	ul.mobileMenu{
-		display: flex;
-		align-items: center;
 	}
 	ul.navLinks{
 		display: none;
