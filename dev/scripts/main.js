@@ -9,6 +9,6 @@ $(function () {
 
 	$('.hamburger').on('click', function(){
 		$('.menu').toggleClass('overlay');
-		$('.mobileMenu').toggleClass('small');
+		$('.mobileMenu').toggleClass('open');
 	})
 });

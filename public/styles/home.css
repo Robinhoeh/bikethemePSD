@@ -284,7 +284,7 @@ ul.mobileMenu {
       color: #a05460; }
   ul.mobileMenu {
     display: none; }
-  ul.mobileMenu.small {
+  ul.mobileMenu.open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
